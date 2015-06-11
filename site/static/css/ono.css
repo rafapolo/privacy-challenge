@@ -18,7 +18,7 @@ body {
     background-color: #0e0e0e;
     color: #ffecc7;
     font-size: 14px;
-    margin-top: 5%;
+    margin-top: 30px;
     font-family: "MontserratRegular";
 }
 
@@ -41,6 +41,10 @@ pre {
     line-height: 1em;
 }
 
+form {
+    padding-top: 10px;
+}
+
 i.quotes {
     color: #ffecc7;
 }
@@ -56,9 +60,9 @@ i.quotes {
 }
 
 
-form{
+.box{
     background-color:rgba(0,0,0,.2);
-    padding:2em 1em;
+    padding: 5px 20px;
     box-shadow: 3px 3px 0 1px orange;
 }
 
@@ -85,7 +89,12 @@ input:focus{
     outline: none;
 }
 
-input[type="submit"]{
+a.submit{
+    padding: 8px;
+    text-decoration: none;
+}
+
+.submit{
     border: #fbfbfb solid 4px;
     cursor:pointer;
     background-color: orange;
@@ -94,19 +103,14 @@ input[type="submit"]{
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-    margin-top:-4px;
     font-weight:700;
 }
 
-input[type="submit"]:hover{
+.submit:hover{
     background-color: #fff;
     color: orange;
 }
-    
-input[type="submit"]:hover {
-    color: orange;
-}
-    
+
 .ease {
     width: 0px;
     background-color: #fbfbfb;
@@ -123,13 +127,28 @@ input[type="submit"]:hover .ease{
 }
 
 input[type="text"]{
-  width: 310px;
+  width: 335px;
 }
 
 form label{
     display: inline-block;
     position: relative;
-    padding-right:10px;
+    padding-right: 10px;
+    padding-left: 13px;
+}
+
+.box{
+    display: none;
+    margin-bottom: 20px;
+}
+
+.center{
+    padding: 15px;
+    text-align: center;
+}
+
+.large{
+    width: 230px;
 }
 
 #content{
@@ -141,7 +160,7 @@ form label{
     line-height: 1.5em;
     margin: 2em auto;
     width: 600px;
-    padding: 2em;
+    padding: 5px 30px;
 }
 
 #onologo{
@@ -173,16 +192,10 @@ form label{
     animation-iteration-count: infinite;
 }
 
-.small{
-    font-size: 13px;
-    text-align: center;
-    color: #3498db;
-}
-
 h1{
     text-align: center;
     text-shadow: 2px 2px 0px #3498db;
-    font-size: 26px;
+    font-size: 25px;
 }
 
 #footer{
@@ -195,6 +208,7 @@ h1{
     font-size: 11px;
 }
 
-#footer:hover{
-    opacity:1;
+#footer>a{
+    padding: 0px 5px 0px 5px;
 }
+
