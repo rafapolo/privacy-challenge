@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<div class='center'>
+  <a href='/play' class='submit large btn_hover'>Play</a>
+  <a href='/teach' class='submit large'>Teach</a>
+</div>
+
+<div id='play_box' class='box'>
+  <p>Do you want to help Ono save Secure-a-lot and learn all about safe and secure
+  communications along the way?  If you are ready for your treasure hunt through the internet, enter your email, and Ono will get in contact with YOU!</p>
+  <p>You shouldn't trust random third parties with your email address.  How are you sure you can trust us?  Creating a unique email address for this contact is an excellent way to protect your identity in case the untrusted 3rd party leaks private information.</p>
+  <form action="signup">
+     <label>your email</label><input type="text" name="email" />
+     <input type="submit" class='submit' value="signup" />
+  </form>
+</div>
+
+{% endblock %}

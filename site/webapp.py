@@ -64,6 +64,15 @@ def index():
                            ,vendor=request.user_agent.platform
                            ,ip=request.args.get('ip',request.remote_addr)
                            )
+
+@app.route('/play')
+def play():
+    return render_template('play.html')
+
+@app.route('/teach')
+def teach():
+    return render_template('teach.html')
+
 @app.route('/yay1')
 def yay1():
     return render_template('yay1.html')

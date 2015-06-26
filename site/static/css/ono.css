@@ -53,6 +53,7 @@ i.quotes {
     width: 70%;
     left: 15%;
     position: relative;
+
 }
 
 .empty {
@@ -92,6 +93,8 @@ input:focus{
 a.submit{
     padding: 8px;
     text-decoration: none;
+    display: inline-block;
+    text-align: center;
 }
 
 .submit{
@@ -107,6 +110,11 @@ a.submit{
 }
 
 .submit:hover{
+    background-color: #fff;
+    color: orange;
+}
+
+.btn_hover{
     background-color: #fff;
     color: orange;
 }
@@ -138,13 +146,16 @@ form label{
 }
 
 .box{
-    display: none;
     margin-bottom: 20px;
 }
 
 .center{
     padding: 15px;
     text-align: center;
+    padding: 40px;
+}
+.center>a{
+    width: 200px;
 }
 
 .large{
